@@ -1,0 +1,72 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="College">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Student" minOccurs="1" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="id">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:unsignedInt">
+                                        <xs:minInclusive value="1"></xs:minInclusive>
+                                        <xs:maxInclusive value="8"></xs:maxInclusive>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="Stu-name" type="xs:string" />
+                            <xs:element name="Stu-Course" type="xs:string" />
+                            <xs:element name="Stu-Sem">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:unsignedShort">
+                                        <xs:minInclusive value="1"></xs:minInclusive>
+                                        <xs:maxInclusive value="8"></xs:maxInclusive>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="Stu-Sub1">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:unsignedInt">
+                                        <xs:minInclusive value="0"></xs:minInclusive>
+                                        <xs:maxInclusive value="100"></xs:maxInclusive>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="Stu-Sub2">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:unsignedInt">
+                                        <xs:minInclusive value="0"></xs:minInclusive>
+                                        <xs:maxInclusive value="100"></xs:maxInclusive>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="Stu-Sub3">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:unsignedInt">
+                                        <xs:minInclusive value="0"></xs:minInclusive>
+                                        <xs:maxInclusive value="100"></xs:maxInclusive>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="Stu-Total">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:unsignedInt">
+                                        <xs:minInclusive value="0"></xs:minInclusive>
+                                        <xs:maxInclusive value="300"></xs:maxInclusive>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="Stu-Avg">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:float">
+                                        <xs:minInclusive value="0"></xs:minInclusive>
+                                        <xs:maxInclusive value="100"></xs:maxInclusive>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

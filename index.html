@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management System</title>
+    <style>
+        body {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            background-color: #e3e3e3;
+        }
+
+        h1 {
+            text-align: center;
+            text-decoration: underline;
+            margin-bottom: 1.6em;
+        }
+
+        .form {
+            display: flex;
+            justify-content: center;
+            margin-top: 3em;
+        }
+
+        form {
+            font-size: 24px;
+            border: 1px solid;
+            padding: 3rem;
+            border-radius: 15px;
+            background-color: white;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="url"],
+        input[type="date"],
+        select {
+            border: 1px solid red;
+            width: 35vw;
+        }
+
+        input,
+        option,
+        select {
+            font-size: 22px;
+            border-radius: 10px;
+        }
+
+        .lbl {
+            margin-top: 1.3em;
+        }
+
+        .lbl input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="url"],
+        input[type="date"],
+        option,
+        select {
+            float: right;
+        }
+
+        .btn {
+            margin-top: 2em;
+            padding: 10px 50px 10px 50px ;
+            background-color: red;
+            color: white;
+        }
+
+        .btn:hover{
+            padding: 11px 51px 11px 51px ;
+            color: black;
+            border: 1px solid blue;
+        }
+        #submit{
+            float: right;
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form">
+        <form action="#" autocomplete="on">
+            <h1>Student Management System</h1>
+
+            <div class="lbl">
+                <label for="name">Enter your name</label>
+                <input type="text" name="" id="" placeholder="John Doe" required>
+            </div>
+            <br>
+
+            <div class="lbl">
+                <label for="name">Phone Number</label>
+                <input type="tel" name="" id="" required>
+            </div>
+            <br>
+
+            <div class="lbl">
+                <label for="">Enter Date of Birth </label> &nbsp;
+                <input type="date" name="" id="" required>
+            </div>
+            <br>
+
+            <div class="lbl">
+                <label for="">Enter Mail id</label>
+                <input type="email" name="" id="" required placeholder="johndoe@mail.com">
+            </div>
+            <br>
+
+            <div class="lbl">
+                <label for="" style="padding-right: 4vw;">Select Level</label>
+                <input type="radio" name="prg" id="" value="UG" required> UG
+                <input type="radio" name="prg" id="" value="PG" required> PG
+            </div>
+            <br>
+
+            <div class="lbl">
+                <label for="">Select Program</label>
+                <select name="course" id="" required>
+                    <option selected disabled value="">Please Select</option>
+                    <option value="MCA">MCA</option>
+                    <option value="MCA">BCA</option>
+                    <option value="MCA">MDS</option>
+                    <option value="MCA">MSC</option>
+                </select>
+            </div>
+            <br>
+
+            <div class="lbl">
+                <label for="">Select applicable</label> &nbsp; &nbsp;
+                <input type="checkbox" name="prg" id="" value="UG"> Bangalore
+                <input type="checkbox" name="prg" id="" value="UG"> Pune
+                <input type="checkbox" name="prg" id="" value="UG"> Delhi
+                <input type="checkbox" name="prg" id="" value="PG"> Hostel required
+            </div>
+            <br>
+
+            <div class="lbl">
+                <label for="" style="padding-right: 4vw;">UG Degree</label>
+                <input type="file" name="" id="" required style="border-radius: 0;">
+            </div>
+            <br>
+
+            <div class="lbl">
+                <label for="">LinkedIn URL </label>
+                <input type="url" name="" id="" placeholder="linkedin.com/in/john/doe" required>
+            </div>
+            <br>
+
+            <div class="lbl">
+                <label for="">Enter Comments</label>
+                <input type="text" name="" id="">
+            </div>
+            <br>
+
+            <input type="reset" value="Reset" class="btn">
+            <input type="submit" value="submit" class="btn" id="submit">
+
+            <br> <br> <br>
+            <div style="text-align: right;">
+                <a href="http://www.christuniversity.in">Back</a>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
